@@ -22,7 +22,10 @@ li {
 }
 
 /* Base + Font styles */
-/* -------------------- */
+body {
+  font-family: Inter;
+}
+
 /* Mobile styles -- Starting point */
 /* -------------------- */
 /* Footer styles */
