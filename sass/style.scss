@@ -5,7 +5,12 @@
 // The foregoing remain constant throughout all styles specified for all screens.
 
 /* Global Varibables */
-/* -------------------- */
+$primary-1: hsl(240, 38%, 20%);
+$primary-2: hsl(240, 18%, 77%);
+
+$body-font-size: 32px;
+$font-stack: Inter;
+$font-weights: ("light": 300, "medium": 500, "bold": 700);
 
 /* Reset browser defaults */
 html {
