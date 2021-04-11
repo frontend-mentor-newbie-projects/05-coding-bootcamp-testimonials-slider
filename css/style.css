@@ -24,10 +24,142 @@ li {
 /* Base + Font styles */
 body {
   font-family: Inter;
+  background-image: url(../images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: left bottom;
+}
+
+main .profile-picture {
+  margin-top: 56px;
+  margin-bottom: 26px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-image: url(../images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+main .profile-picture div#container {
+  height: 310px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+main .profile-picture img {
+  width: 256px;
+  height: 256px;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+}
+
+main .profile-picture .button-group {
+  background-color: white;
+  border-radius: 4rem;
+  position: absolute;
+  top: 264px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), 0 2px 2px rgba(0, 0, 0, 0.05), 0 4px 4px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.05), 0 16px 16px rgba(0, 0, 0, 0.05);
+  /* Clear floats (clearfix hack) */
+}
+
+main .profile-picture .button-group .fa-chevron-left, main .profile-picture .button-group .fa-chevron-right {
+  color: #8585AC;
+  font-size: 1rem;
+}
+
+main .profile-picture .button-group button {
+  background-color: white;
+  border: none;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  float: left;
+}
+
+main .profile-picture .button-group button:hover, main .profile-picture .button-group button:focus, main .profile-picture .button-group button:active {
+  outline: none;
+}
+
+main .profile-picture .button-group button#previous {
+  border-top-left-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+  padding-left: 10px;
+}
+
+main .profile-picture .button-group button#next {
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  padding-right: 10px;
+}
+
+main .profile-picture .button-group button:not(:last-child) {
+  border-right: none;
+  /* Prevent double borders */
+  border-left: none;
+}
+
+main .profile-picture .button-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+main .testimonial {
+  margin-bottom: 24px;
+  padding-top: 28px;
+  background-image: url(../images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: top;
+}
+
+main .testimonial p {
+  color: #202046;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+main .student-information {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 72px;
+}
+
+main .student-information span#name {
+  color: #202046;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+main .student-information span#role {
+  color: #babacf;
+  font-weight: 300;
 }
 
 /* Mobile styles -- Starting point */
-/* -------------------- */
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+main {
+  min-width: 300px;
+  max-width: 328px;
+}
+
 /* Footer styles */
 .attribution {
   font-size: 11px;

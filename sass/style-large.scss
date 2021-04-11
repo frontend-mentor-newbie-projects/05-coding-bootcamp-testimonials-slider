@@ -1,4 +1,111 @@
 /* Desktop styles -- The width of the screen is at least 1200px */
 @media screen and (min-width: 1200px){
+    // Layout styles
+    body {
+        display: flex;
     
+        // height: 100vh;
+    
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    
+        margin: 0 auto;
+        padding: 56px 24px;
+
+        background-image: none;
+
+        background-image: url(../images/pattern-curve.svg);
+        background-repeat: no-repeat;
+        background-size: 35%;
+        background-position: left bottom;
+    }
+    
+    main {
+        display: flex;
+
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+        min-width: 1112px;
+        max-width: 112px;
+
+        margin: 0 auto;
+    }
+
+    section.testimonial, section.student-information {
+        grid-column: 1 / 2;
+        // grid-row: auto;
+
+        order: 1;
+
+        width: 400px;
+    }
+    
+    section.profile-picture {
+        grid-column: 2 / -1;
+        // grid-row: auto;
+
+        order: 2;
+
+        width: 704px;
+    }
+
+    main .profile-picture {
+        div#container {
+            height: 664px;
+        }
+
+        img {
+            width: 554px;
+            height: 554px;
+            
+            border-radius: 0.5rem;
+    
+            margin: 0 auto;
+        }
+
+        .button-group {
+            background-color: white;
+            border-radius: 4rem;
+    
+            position: absolute; // TODO: fixed will make it move when the page scrolls
+            right: 400px;
+            top: 590px; // TODO: This can't be positioned like this
+        }
+    }
+
+    main .testimonial {
+        p {
+            font-size: 2rem;
+            font-weight: 300;
+    
+            line-height: 2.5rem;
+    
+            text-align: left;
+        }
+    }
+
+    main .student-information {
+        display: flex;
+    
+        flex-flow: row nowrap;
+        align-items: center;
+    
+        font-size: 1.2rem;
+        margin-bottom: 72px; // TODO: Because of the background image. This may be causing the weird spacing.
+    
+        span#name {
+            font-weight: 700;
+    
+            margin-right: 1rem;
+            margin-bottom: 0;
+        }
+    
+        span#role {
+            font-weight: 300;
+        }
+    }
+
 }
